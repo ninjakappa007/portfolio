@@ -471,7 +471,7 @@
         position: absolute;
         font-size: 12em;
         font-style: bold;
-        color: white;
+        color: rgb(83, 83, 83);
         bottom: -34.5%;
         right: -25%;
         /* justify-content: end; */
