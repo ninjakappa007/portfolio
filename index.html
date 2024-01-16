@@ -14,6 +14,23 @@
             padding: 0;
             box-sizing: border-box;
         }
+        .card-side{
+            backface-visibility: hidden;
+            position: absolute;
+        }
+        .card-side.back{
+            transform:rotateX(-180deg) ;
+            /* background-color: blue; */
+        }
+        .card-side.front{
+            /* background-color: green; */
+        }
+        .card:hover .card-side.front{
+            transform: rotateX(180deg);
+        }
+        .card:hover .card-side.back{
+            transform: rotateX(0deg);
+        }
     </style>
 </head>
 <body>
@@ -40,7 +57,7 @@
                         </div> -->
                     </div>
                 </ul>
-                <button class="text-sm font-extralight border-solid border border-black rounded-3xl bg-blue-600 text-black
+                <button class="text-sm font-light border-solid border border-black rounded-3xl bg-blue-600 text-black
                  w-40 hover:text-slate-200 duration-300  hover:shadow-md  hover:scale-110" >
                  <a href="https://www.linkedin.com/in/nayakashutosh/" target="_blank">Visit Linkedin</a></button>
             </section>
@@ -64,8 +81,8 @@
                 class="text-left xl:text-center 
                 text-[16px] md:text-[20px] leading-[26px] font-extralight
                 md:leading-[32.5px] font-['gg sans'] w-[90%] md:w-[70%] xl:w-[90%] z-20 xl:self-center">
-                <span class="hover:text-black duration-500">I'm Ashutosh , A Frontend Devloper, I Can Make Cool Websites For You .</span><br>
-                <span class="hover:text-black duration-500">Let’s Work Together. </span>
+                <span class="hover:text-blue-600 duration-500">I'm Ashutosh , A Frontend Devloper, I Can Make Cool Websites For You .</span><br>
+                <span class="hover:text-blue-600 duration-500">Let’s Work Together. </span>
               </p>
       
               <div class="hidden xl:flex flex-row item-center justify-center gap-10 font-[500] z-20">
@@ -98,14 +115,12 @@
         </div>
         <!-- Project section -->
         <!-- project 1 -->
-        <div class="w-full bg-zinc-900" id="project">
+        <!-- <div class="w-full bg-zinc-900" id="project">
             <div class="flex container max-w-[1080px] mx-auto items-center py-10 lg:py-20 flex-col md:flex-row px-7 md:px-0 xl:gap-32 gap-5">
-                <!-- left part with img -->
                 <div class="md:w-[50%]">
                     <img src="./images/razorpay.png" alt="unable to load image" loading="eager"  width="1000px" class="rounded-md border-solid border-2 border-blue-600
                     hover:scale-105 duration-300">
                 </div>
-                <!-- right part with description -->
                 <div class="lg:w-[30%] w-[90%]">
                     <h2 class="font-extralight text-6xl text-slate-200">Razorpay Clone</h2>
                     <div class="bg-blue-600 w-20 h-1 mt-2 rounded-md"></div>
@@ -117,7 +132,6 @@
                         <img src="./images/stack/Tailwind.png" alt="" class="w-8 h-8">
                         <a href="https://github.com/ninjakappa007/Razorpay_clone.git" target="_blank" 
                             class=""><i class="fa-brands fa-github text-[35px] hover:text-blue-600 duration-500"></i>
-                            <!-- <div class=" absolute bg-blue-600 w-16 h-1 mt-2 rounded-md hidden group-hover:block duration-1000"></div> -->
                         </a>
                         <a href="https://razerpay.netlify.app/" target="_blank" class="hover:text-blue-600 duration-500 ease-in-out text-3xl">
                             <i class="fa-solid fa-arrow-right"></i>
@@ -126,9 +140,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
             <!-- project 2 -->
-        <div class="bg-zinc-900">
+        <!-- <div class="bg-zinc-900">
             <div class="flex container max-w-[1080px] mx-auto items-center py-10 lg:py-20 flex-col md:flex-row px-7 md:px-0 xl:gap-32 gap-5">
                 <div class="lg:w-[30%] w-[90%]">
                     <h2 class="font-extralight text-6xl text-slate-200">Portfolio Website</h2>
@@ -152,42 +166,111 @@
             </div>
             
             </div>
-       </div>
-        <!--Tech Stack section  -->
-        <div class="bg-zinc-950 overflow-x-hidden">
-                <div class="flex flex-col container max-w-[1080px] mx-auto items-center py-10 lg:py-20 px-5">
-
-                    <h1 class="text-3xl leading-[19px] md:leading-[32px] text-left md:text-center md:text-7xl font-extraligh text-slate-200"  id="stack">Me and My Tech Stack</h1>
-                    <div class="bg-blue-600 w-96 h-1 mt-8 rounded-md "></div>
-                    <p class="md:text-center md:w-[83%] md:text-[20px] 
-                    md:leading-[32.5px] text-[16px] leading-[26px] mt-[24px] font-extralight text-slate-200">
-                    Am currently working as Testing Associate at amazon specializing in Networking & WLAN.
-                        Proficient in Python, Selenium, and PyTest for efficient automation.
-                    </p>
-                    <p class="md:text-center md:w-[83%] md:text-[20px] 
-                    md:leading-[32.5px] text-[16px] leading-[26px] mt-[24px] font-extralight text-slate-200">Currently learning about Web devlopment using MERN .</p>
-                    <div class="lg:w-10 flex justify-center gap-4 w-6 mt-5">
-                        <img src="./images/stack/HTML.png" alt="" class="hover:scale-125 duration-300 ease-in-out">
-                        <img src="./images/stack/CSS.png" alt="" class="hover:scale-125 duration-300 ease-in-out">
-                        <img src="./images/stack/Javascript.svg" alt="" class="hover:scale-125 duration-300 ease-in-out">
-                        <img src="./images/stack/React.png" alt="" class="hover:scale-125 duration-300 ease-in-out">
-                        <img src="./images/stack/Tailwind.png" alt="" class="hover:scale-125 duration-300 ease-in-out">
-                        <img src="./images/stack/NodeJs.svg" alt="" class="hover:scale-125 duration-300 ease-in-out">
-                        <img src="./images/stack/MongoDB.svg" alt="" class="hover:scale-125 duration-300 ease-in-out">
-                        <!-- <img src="./images/stack/Github.svg" alt="" class="hover:scale-125 duration-300 ease-in-out "> -->
-                        <img src="./images/stack/Express.png" alt="" class="hover:scale-125 duration-300 ease-in-out">
-                        <img src="./images/stack/MaterialUI.svg" alt="" class="hover:scale-125 duration-300 ease-in-out">
-                    </div>
-                    <a href="https://github.com/ninjakappa007" target="_blank">
-                        <button
-                        class="bg-[#404EED]  md:block w-fit text-slate-200 text-[20px] 
-                        font-extralight mt-5 px-[32px] py-[16px] rounded-full hover:scale-110 duration-300">
-                        Open GitHub
-                    </button>
+       </div> -->
+       <h2 class="bg-zinc-950 text-slate-200 p-5 lg:text-5xl text-3xl font-extralight lg:text-center">Projects</h2>
+       <div class="bg-zinc-950 flex lg:flex-row flex-col lg:justify-around items-center">
+        <!-- project 1 -->
+            <div class="card relative h-[400px] w-[400px] ">
+                <div class="card-side front h-[350px] w-[350px] rounded-md duration-1000 p-6 bg-zinc-900">
+                    <figure>
+                        <img src="./images/razorpay.png" alt="" class="rounded-md border border-blue-600">
+                        <figcaption class="text-slate-200 pt-4 text-4xl font-extralight">Razorpay Clone</figcaption>
+                        <div class="mt-5 flex gap-6 relative group ">
+                            <img src="./images/stack/HTML.png" alt="" class="w-8 h-8">
+                            <img src="./images/stack/CSS.png" alt="" class="w-8 h-8">
+                            <img src="./images/stack/Tailwind.png" alt="" class="w-8 h-8">
+                        </div>
+                    </figure>
+                </div>
+                <div class="card-side back h-[350px] w-[350px] rounded-md duration-1000 p-6 bg-zinc-900">
+                    <h2 class=" text-slate-200 pt-4 text-2xl font-extralight">Built a web application that closely mimicked the design of the popular Indian payment gateway,
+                        Razor Pay, using HTML & Tailwind CSS.
+                    </h2>
+                   <div class="pt-4 flex gap-5">
+                    <a href="https://github.com/ninjakappa007/Razorpay_clone.git" target="_blank" 
+                    class=""><i class="fa-brands fa-github text-[45px] text-blue-600"></i>
                     </a>
-                
+                    <a href="https://razerpay.netlify.app/" target="_blank" class="text-blue-600 text-5xl">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                   </div>
                 </div>
             </div>
+        <!-- project 2 -->
+            <div class="card relative h-[400px] w-[400px] ">
+                <div class="card-side front h-[350px] w-[350px] rounded-md duration-1000 p-6 bg-zinc-900">
+                    <figure>
+                        <img src="./images/detailinhub.png" alt="" class="rounded-md border border-blue-600">
+                        <figcaption class="text-slate-200 pt-4 text-4xl font-extralight">Portfolio Website</figcaption>
+                        <div class="mt-5 flex gap-6 relative group ">
+                            <img src="./images/stack/HTML.png" alt="" class="w-8 h-8">
+                            <img src="./images/stack/CSS.png" alt="" class="w-8 h-8">
+                            <img src="./images/stack/Tailwind.png" alt="" class="w-8 h-8">
+                        </div>
+                    </figure>
+                </div>
+                <div class="card-side back h-[350px] w-[350px] rounded-md duration-1000 p-6 bg-zinc-900">
+                    <h2 class=" text-slate-200 pt-4 text-2xl font-extralight">
+                        Built a web application to showcase services provided by a local shop, using HTML & Tailwind CSS.
+                    </h2>
+                   <div class="pt-4 flex gap-5">
+                    <a href="https://github.com/ninjakappa007/Detailing_hub.git" target="_blank" 
+                    class=""><i class="fa-brands fa-github text-[45px] text-blue-600"></i>
+                    </a>
+                    <a href="https://detailinghub.netlify.app" target="_blank" class="text-blue-600 text-5xl">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                   </div>
+                </div>
+            </div>
+       </div>
+       <!--Tech Stack section  -->
+        <div class="bg-zinc-950 overflow-x-hidden">
+                <div class="flex container lg:flex-row flex-col max-w-[1150px] mx-auto justify-around py-10 lg:py-20 px-5">
+                    <!-- content -->
+                    <div class="lg:w-[50%] w-[90%]">
+                        <h1 class="text-3xl leading-[19px] md:leading-[32px] text-left lg:text-4xl font-extralight text-slate-200"  id="stack">Me and My Tech Stack</h1>
+                        <div class="bg-blue-600 lg:w-72 w-40 h-1 mt-8 rounded-md "></div>
+                        <p class="text-left md:w-[83%] md:text-[20px] 
+                            md:leading-[32.5px] text-[16px] leading-[26px] mt-[24px] font-extralight text-slate-200">
+                                Am currently working as Testing Associate at amazon specializing in Networking & WLAN.
+                                Proficient in Python, Selenium, and PyTest for efficient automation.
+                        </p>
+                        <p class="text-left md:w-[83%] md:text-[20px] 
+                            md:leading-[32.5px] text-[16px] leading-[26px] mt-[24px] font-extralight text-slate-200">Currently learning about Web devlopment using MERN.
+                        </p>
+                        <a href="https://github.com/ninjakappa007" target="_blank">
+                            <button
+                                class="bg-[#404EED]  md:block w-fit text-slate-200 text-[20px] 
+                                font-extralight mt-5 px-[32px] py-[16px] rounded-full hover:scale-110 duration-300">
+                                Open GitHub
+                            </button>
+                        </a>
+                    </div>
+                    <!-- icons -->
+                    <div class="w-[40%]">
+                        <div class="lg:w-16 flex flex-col justify-center gap-4 w-6 mt-5 ">
+                            <div class="flex gap-10">
+                                <img src="./images/stack/HTML.png" alt="">
+                                <img src="./images/stack/CSS.png" alt="">
+                                <img src="./images/stack/Javascript.svg" alt="" class="scale-150">
+                                <img src="./images/stack/React.png" alt="">
+                            </div>
+                            <div class="flex gap-10">
+                                <img src="./images/stack/Tailwind.png" alt="" class="scale-105">
+                                <img src="./images/stack/NodeJs.svg" alt="" class="scale-105">
+                                <img src="./images/stack/MongoDB.svg" alt="" class="scale-150">
+                                <img src="./images/stack/Git.svg" alt="" class="scale-150">
+                            </div>
+                            <div class="flex gap-10">
+                                <img src="./images/stack/Redux.svg" alt="" class="">
+                                <img src="./images/stack/Express.png" alt="" class="">
+                            </div>   
+                        </div>
+                    </div>
+                
+                </div>
+        </div>
          <!-- Footer -->
         <div class="bg-blue-800" id="connect">
             <div class="container text-[#5865f2] max-w-[1200px] mx-auto pt-24 flex flex-col gap-10 pb-10">
