@@ -1,258 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ashutosh Nayak</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="./images/a_fevicon/android-chrome-512x512.png" type="image/x-icon">
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .wrapper{
-            overflow-x: hidden;
-        }
-        .card-side{
-            backface-visibility: hidden;
-            position: absolute;
-        }
-        .card-side.back{
-            transform:rotateX(-180deg) ;
-        }
-        .card:hover .card-side.front{
-            transform: rotateX(180deg);
-        }
-        .card:hover .card-side.back{
-            transform: rotateX(0deg);
-        }
-    </style>
-</head>
-<body>
-    <!-- Main wrapper -->
-    <div id="wrapper font-ggSans overflow-x-hidden w-full">
-        <!-- Nav-bar section -->
-        <nav class="bg-zinc-950  h-14 relative">
-            <section class="flex max-w-[1080px] mx-auto justify-between p-3">
-                <div class="text-slate-200 text-2xl font-semibold ">Ashutosh Nayak </div>
-                <ul class="flex gap-20 text-slate-200 text-xl font-extralight ">
-                    <div class="hover:scale-110 hover:text-blue-600 cursor-pointer ease-in-out duration-300 relative group lg:block hidden"><a href="#project">Projects</a>
-                    </div>
-                    <div class="hover:scale-110 hover:text-blue-600 cursor-pointer ease-in-out duration-300 relative group lg:block hidden"><a href="#stack">Tech Stack</a>
-                    </div>
-                    <div class="hover:scale-110 hover:text-blue-600 cursor-pointer ease-in-out duration-300 relative group lg:block hidden"><a href="#connect">Connect</a>
-                    </div>
-                </ul>
-                <button class="text-sm font-light border-solid border border-black rounded-3xl bg-blue-600 text-black
-                 w-40 hover:text-slate-200 duration-300  hover:shadow-md  hover:scale-110" >
-                 <a href="https://www.linkedin.com/in/nayakashutosh/" target="_blank">Linkedin</a>
-                </button>
-            </section>
-        </nav>
-        <!-- Hero Section -->
-        <div class="bg-zinc-950 -mt-1 relative w-full overflow-x-hidden">
-        
-            <!-- <img src="./images/Image0.svg" class="hidden xl:block absolute z-10 bottom-0 top-auto scale-x-125" alt=""/> -->
-            <img src="./images/Image1.svg" class="hidden xl:block absolute z-10 bottom-0 -right-[12%]" alt="" />
-            <img src="./images/Image2.svg" class="hidden xl:block absolute z-10 bottom-0 -left-[12%]" alt="" />
-            <div
-              class="text-slate-200 container max-w-[1200px] xl:px-0 px-7 xl:max-w-[900px] 
-              mx-auto text-center xl:h-[555px] flex flex-col gap-5 pt-[50px] xl:pt-[120px]">
-  
-              <h2 class="text-left xl:text-center  text-2xl lg:text-7xl
-                z-20 font-extralight text-slate-200">
-                Hello There .<span class="hello"></span>
-              </h2>
-  
-              <p
-                class="text-left xl:text-center 
-                text-[16px] md:text-[20px] leading-[26px] font-extralight
-                md:leading-[32.5px] font-['gg sans'] w-[90%] md:w-[70%] xl:w-[90%] z-20 xl:self-center">
-                <span class="hover:text-blue-600 duration-500">I'm Ashutosh , A Frontend Devloper, I Can Make Cool Websites For You .</span><br>
-                <span class="hover:text-blue-600 duration-500">Let’s Work Together. </span>
-              </p>
-      
-              <div class="hidden xl:flex flex-row item-center justify-center gap-10 font-[500] z-20">
-           
-                <a href="./images/Resume_Ashutosh_Nayak_QA.pdf" download="Ashutosh_Nayak_Resume" 
-                class="bg-blue-600 text-black p-3 px-7 rounded-full hover:scale-105 duration-300 border-black border-solid border font-extralight"><i class="fa-solid fa-download mr-2"></i>
-                  Download My Resume</a>
-              </div>
-      
-              <!-- Mobile/Tablet Mode Start -->
-              <div class="flex xl:hidden font-[500] z-20">
-                <a href="./images/Resume_Ashutosh_Nayak_QA.pdf" download="Ashutosh_Nayak_Resume" 
-                class="bg-white text-black p-3 px-7 rounded-full  duration-300  hover:shadow-md hover:shadow-cyan-500/25 hover:scale-110">
-                  <p>
-                    <i class="fa-solid fa-download mr-2"></i>
-                    Download Resume
-                  </p>
-                </a>
-              </div>
-      
-              <img src="./images/Image2.svg" class="block md:hidden ml-[-80px]" alt="" />
-      
-              <div class="hidden md:flex xl:hidden mr-[-150px] mt-[-16%] justify-end">
-                <img src="./images/Image1.svg" class="w-[70%]" alt="" />
-              </div>
-      
-              <!-- Mobile/Tablet Mode End -->
-            </div>
-          
-        </div>
-        <!-- Project section -->
-       <h2 class="bg-zinc-950 text-slate-200 p-5 lg:text-5xl text-3xl font-extralight text-center -mt-1">Projects</h2>
-       <div class="bg-zinc-950 flex lg:flex-row flex-col lg:justify-around items-center -mt-1">
-        <!-- project 1 -->
-            <div class="card relative h-[400px] w-[400px] lg:pl-0 pl-10">
-                <div class="card-side front lg:h-[350px] lg:w-[350px] h-[300px] w-[300px] rounded-md duration-1000 p-6 bg-zinc-900">
-                    <figure>
-                        <img src="./images/razorpay.png" alt="" class="rounded-md border border-blue-600">
-                        <figcaption class="text-slate-200 pt-4 text-4xl font-extralight">Razorpay Clone</figcaption>
-                        <div class="mt-5 flex gap-6 relative group ">
-                            <img src="./images/stack/HTML.png" alt="" class="w-8 h-8">
-                            <img src="./images/stack/CSS.png" alt="" class="w-8 h-8">
-                            <img src="./images/stack/Tailwind.png" alt="" class="w-8 h-8">
-                        </div>
-                    </figure>
-                </div>
-                <div class="card-side back lg:h-[350px] lg:w-[350px] h-[300px] w-[300px] rounded-md duration-1000 p-6 bg-zinc-900">
-                    <h2 class=" text-slate-200 pt-4 text-2xl font-extralight">Built a web application that closely mimicked the design of the popular Indian payment gateway,
-                        Razor Pay, using HTML & Tailwind CSS.
-                    </h2>
-                   <div class="pt-4 flex gap-5">
-                    <a href="https://github.com/ninjakappa007/Razorpay_clone.git" target="_blank" 
-                    class=""><i class="fa-brands fa-github text-[45px] text-blue-600"></i>
-                    </a>
-                    <a href="https://razerpay.netlify.app/" target="_blank" class="text-blue-600 text-5xl">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                   </div>
-                </div>
-            </div>
-        <!-- project 2 -->
-            <div class="card relative h-[400px] w-[400px] lg:pl-0 pl-10">
-                <div class="card-side front lg:h-[350px] lg:w-[350px] h-[300px] w-[300px] rounded-md duration-1000 p-6 bg-zinc-900">
-                    <figure>
-                        <img src="./images/detailinhub.png" alt="" class="rounded-md border border-blue-600">
-                        <figcaption class="text-slate-200 pt-4 text-4xl font-extralight">Portfolio Website</figcaption>
-                        <div class="mt-5 flex gap-6 relative group ">
-                            <img src="./images/stack/HTML.png" alt="" class="w-8 h-8">
-                            <img src="./images/stack/CSS.png" alt="" class="w-8 h-8">
-                            <img src="./images/stack/Tailwind.png" alt="" class="w-8 h-8">
-                        </div>
-                    </figure>
-                </div>
-                <div class="card-side back lg:h-[350px] lg:w-[350px] h-[300px] w-[300px] rounded-md duration-1000 p-6 bg-zinc-900">
-                    <h2 class=" text-slate-200 pt-4 text-2xl font-extralight">
-                        Built a web application to showcase services provided by a local shop, using HTML & Tailwind CSS.
-                    </h2>
-                   <div class="pt-4 flex gap-5">
-                    <a href="https://github.com/ninjakappa007/Detailing_hub.git" target="_blank" 
-                    class=""><i class="fa-brands fa-github text-[45px] text-blue-600"></i>
-                    </a>
-                    <a href="https://detailinghub.netlify.app" target="_blank" class="text-blue-600 text-5xl">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                   </div>
-                </div>
-            </div>
-       </div>
-
-
-       <!--Tech Stack section  -->
-        <div class="bg-zinc-950 overflow-x-hidden -mt-1 w-full ">
-                <div class="flex container lg:flex-row flex-col mx-auto justify-around py-10 lg:py-20 px-5">
-                    <!-- content -->
-                    <div class="lg:w-[50%] w-[90%]">
-                        <h1 class="text-3xl leading-[19px] md:leading-[32px] text-left lg:text-4xl font-extralight text-slate-200"  id="stack">Me and My Tech Stack</h1>
-                        <div class="bg-blue-600 lg:w-72 w-40 h-1 mt-8 rounded-md "></div>
-                        <p class="text-left md:w-[83%] md:text-[20px] 
-                            md:leading-[32.5px] text-[16px] leading-[26px] mt-[24px] font-extralight text-slate-200">
-                                Am currently working as Testing Associate at amazon specializing in Networking & WLAN.
-                                Proficient in Python, Selenium, and PyTest for efficient automation.
-                        </p>
-                        <p class="text-left md:w-[83%] md:text-[20px] 
-                            md:leading-[32.5px] text-[16px] leading-[26px] mt-[24px] font-extralight text-slate-200">Currently learning about Web devlopment using MERN.
-                        </p>
-                        <a href="https://github.com/ninjakappa007" target="_blank">
-                            <button
-                                class="bg-[#404EED]  md:block w-fit text-slate-200 text-[20px] 
-                                font-extralight mt-5 px-[32px] py-[16px] rounded-full hover:scale-110 duration-300">
-                                Open GitHub
-                            </button>
-                        </a>
-                    </div>
-                    <!-- icons -->
-                    <div class="w-[50%]">
-                        <div class="lg:w-16 flex flex-col justify-center gap-4 w-6 mt-5 ">
-                            <div class="flex gap-10">
-                                <img src="./images/stack/HTML.png" alt="">
-                                <img src="./images/stack/CSS.png" alt="">
-                                <img src="./images/stack/Javascript.svg" alt="" class="scale-150">
-                                <img src="./images/stack/React.png" alt="">
-                            </div>
-                            <div class="flex gap-10">
-                                <img src="./images/stack/Tailwind.png" alt="" class="scale-105">
-                                <img src="./images/stack/NodeJs.svg" alt="" class="scale-105">
-                                <img src="./images/stack/MongoDB.svg" alt="" class="scale-150">
-                                <img src="./images/stack/Git.svg" alt="" class="scale-150">
-                            </div>
-                            <div class="flex gap-10">
-                                <img src="./images/stack/Redux.svg" alt="" class="">
-                                <img src="./images/stack/Express.png" alt="" class="">
-                            </div>   
-                        </div>
-                    </div>
-                
-                </div>
-        </div>
-         <!-- Footer -->
-        <div class="bg-blue-800 " id="connect">
-            <div class="container text-[#5865f2] max-w-[1200px] mx-auto pt-24 flex flex-col gap-10 pb-10">
-            <!-- Section 1 -->
-            <div class="flex gap-[40px] flex-col md:flex-row px-5">
-                <!-- Left Section -->
-                <div class="flex flex-col gap-[24px] w-[100%] md:w-[50%] xl:w-[20%]">
-                <h1 class=" text-[32px] leading-[30.4px] font-extralight text-slate-200">
-                    Connect With Me
-                </h1>
-                <div class="text-slate-200 text-[33px] flex gap-7">
-                    <a href="https://github.com/ninjakappa007">
-                        <i class="fa-brands fa-square-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/nayakashutosh/">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/ashutoshnayaak/">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="mailto:ashutoshnayak410@.com">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                </div>
-                </div>
-        
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ashutosh Nayak</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
+    </nav>
+    <!-- <nav id="hamburger-nav">
+      <div class="logo">Ashutosh Nayak</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav> -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/IMG_3345.jpg" alt="profile picture" style="border-radius: 10px; filter: grayscale(); " />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ashutosh Nayak</h1>
+        <p class="section__text__p2">Full Stack Devloper</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume_Ashutosh_Nayak_QA.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button> 
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/ashu00/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ninjakappa007'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
-    <script>
-      var typeData = new Typed(".hello", {
-        strings: [
-          "...",
-        ],
-        loop: true,
-        typeSpeed: 190,
-        backSpeed: 190,
-        backDelay: 1000,
-      });
-    </script>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello! I'm diving into the MERN stack, which involves React.js, Express.js, Node.js, and MongoDB.
+               I'm pretty good at making cool and user-friendly interfaces using React and Tailwind CSS.
+                I love learning new things and staying up-to-date with the latest web technologies. Excited to bring 
+                creativity and fresh ideas to the world of web development!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> -->
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mongo DB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Vercel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/razorpay.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Razorpay Clone</h2>
+            <div>
+              Built a web application that closely mimicked the design of the popular 
+              Indian payment gateway, Razor Pay, using HTML & Tailwind CSS.
+            </div>
+            <br/>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ninjakappa007/Razorpay_clone'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://razerpay.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/backpack.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Backpack Landing Page</h2>
+            <div>
+              This is created using React js and tailwind css.
+            </div>
+            <br/>
+            <br/>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ninjakappa007/backpack'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://backpack-zeta.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
 
-    </div>
-</body>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:ashutoshnayak410@gmail.com@gmail.com">ashutoshnayak410@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/ashu00/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
