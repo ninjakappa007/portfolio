@@ -1,1 +1,1 @@
-https://nayakashutosh.netlify.app/
+https://nayakashutosh.vercel.app/
